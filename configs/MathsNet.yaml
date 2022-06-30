@@ -1,0 +1,27 @@
+epoch: 30
+pretrain: ./checkpoints/pretrain.pth
+checkpoint: ./data-greedy/model-30-greedy.pth
+checkpoint_save_path: ./checkpoints
+checkpoint_period: 5
+
+start_id: 97
+end_id: 98
+pad_id: 99
+num_classes: 100
+
+dataset:
+  root_dir: D:/pyprojects/AidaMaths
+  height: 100
+  width: 400
+
+dataloader:
+  num_workers: 4
+  batch_size: 32
+
+optimizer:
+  lr: 0.5
+  weight_decay: 0.00005
+
+scheduler:
+  step_size: 10
+  gamma: 0.2
