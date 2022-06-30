@@ -1,0 +1,7 @@
+torch~=1.9.1+cu102
+yaml~=0.2.5
+pyyaml~=6.0
+numpy~=1.20.3
+editdistance~=0.5.3
+pillow~=8.3.2
+torchvision~=0.10.1+cu102
